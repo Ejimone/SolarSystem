@@ -201,7 +201,7 @@ This application aligns with elementary and middle school science curriculum sta
 ## 👥 Contributors
 
 - Evidence Ejimone - Lead Developer and Product Enginner
-- Nithin(Hindu From Hindustan) - Senior Enginner and AI expert
+- Nithin R Bharadwaj - Senior Enginner and AI expert
 
 ## 📄 License
 
