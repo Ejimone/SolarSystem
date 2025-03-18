@@ -206,3 +206,15 @@ This application aligns with elementary and middle school science curriculum sta
 ## 📄 License
 
 This project is licensed under the MIT License
+Title- 3D visualisation of solar system
+abstrsct
+introduction
+related work - literature survey
+exixting work
+proposed work
+objective
+methdolofy
+result and discussion
+conslusion and future work
+reference(new papers(IEEE, scopus), new papers)
+report
