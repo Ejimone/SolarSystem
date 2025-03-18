@@ -202,6 +202,7 @@ This application aligns with elementary and middle school science curriculum sta
 
 - Evidence Ejimone - Lead Developer and Product Enginner
 - Nithin R Bharadwaj - Senior Enginner and AI expert
+- Mozamel Adam Ateem - Assistent Enginner and UI/UX designer
 
 ## 📄 License
 
