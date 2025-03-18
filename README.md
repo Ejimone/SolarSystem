@@ -201,7 +201,7 @@ This application aligns with elementary and middle school science curriculum sta
 ## 👥 Contributors
 
 - Evidence Ejimone - Lead Developer and Product Enginner
-- Ankit(Hindu From Hindustan) - Senior Enginner and AI expert
+- Nithin(Hindu From Hindustan) - Senior Enginner and AI expert
 
 ## 📄 License
 
