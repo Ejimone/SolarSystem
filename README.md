@@ -204,11 +204,8 @@ This application aligns with elementary and middle school science curriculum sta
 - Nithin R Bharadwaj - Senior Enginner and AI expert
 - Mozamel Adam Ateem - Assistent Enginner and UI/UX designer
 
-## 📄 License
+## Changes to be made
 
-This project is licensed under the MIT License
-Title- 3D visualisation of solar system
-abstrsct
 introduction
 related work - literature survey
 exixting work
@@ -219,3 +216,9 @@ result and discussion
 conslusion and future work
 reference(new papers(IEEE, scopus), new papers)
 report
+
+## 📄 License
+
+This project is licensed under the MIT License
+Title- 3D visualisation of solar system
+abstrsct
