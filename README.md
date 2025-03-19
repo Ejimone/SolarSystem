@@ -211,7 +211,7 @@ related work - literature survey
 exixting work
 proposed work
 objective
-methdolofy
+methdology
 result and discussion
 conslusion and future work
 reference(new papers(IEEE, scopus), new papers)
