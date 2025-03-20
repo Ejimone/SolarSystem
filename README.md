@@ -13,6 +13,11 @@ Solar System Explorer is an interactive web application that makes learning abou
 - Interactive quizzes to test space knowledge
 - Fun facts about space and celestial objects
 - Mobile-responsive design for learning on any device
+- User accounts to track progress and achievements
+- Information about additional celestial objects like moons, asteroids, and comets
+- Space mission timelines and detailed mission information
+- Printable worksheets and educational activities
+- Augmented reality features for mobile devices
 
 ## 🌍 Features
 
@@ -41,6 +46,8 @@ A fun educational quiz system that:
 - Provides immediate feedback
 - Covers various difficulty levels
 - Makes learning enjoyable
+- Tracks quiz progress for registered users
+- Awards badges for achievements
 
 ### 4. Fun Facts Section
 
@@ -58,6 +65,53 @@ Additional resources for continued learning about space:
 - Suggested reading materials
 - Related topics for further exploration
 
+### 6. User Accounts & Progress Tracking
+
+User account system that allows students to:
+
+- Create personal profiles
+- Track quiz scores and progress
+- Earn badges and achievements
+- Save favorite content for later
+- Compare scores with friends
+
+### 7. Additional Celestial Objects
+
+Expanded information about other objects in our solar system:
+
+- Moon information for each planet
+- Detailed asteroid and comet data
+- Dwarf planets and their characteristics
+- Planetary rings and their composition
+
+### 8. Space Mission Explorer
+
+Interactive timeline and information about space missions:
+
+- Historical missions from the early space age
+- Current active missions
+- Planned future missions
+- Mission objectives and discoveries
+- Interactive mission timeline
+
+### 9. Educational Worksheets & Activities
+
+Downloadable educational materials:
+
+- Printable worksheets for different age groups
+- Hands-on space-related activities
+- Lesson plans for educators
+- Coloring pages and creative projects
+
+### 10. Augmented Reality Features
+
+Mobile AR experiences to enhance learning:
+
+- View planets in your own space through AR
+- Explore celestial objects in 3D
+- Interactive AR solar system model
+- Educational AR space mission experiences
+
 ## 🔧 Technology Stack
 
 ### Frontend
@@ -68,6 +122,7 @@ Additional resources for continued learning about space:
 - **shadcn/ui**: UI component library based on Radix UI
 - **Wouter**: Lightweight client-side routing
 - **React Query**: Data fetching and state management
+- **AR.js/WebXR**: Augmented reality capabilities
 
 ### Backend
 
@@ -75,6 +130,7 @@ Additional resources for continued learning about space:
 - **Drizzle ORM**: Database management
 - **Neon Database**: PostgreSQL serverless database
 - **TypeScript**: Type-safe development
+- **JWT**: Authentication for user accounts
 
 ## 📁 Project Structure
 
@@ -84,21 +140,33 @@ Additional resources for continued learning about space:
 │   │   ├── components/       # UI components
 │   │   │   ├── layout/       # Layout components (Header, Footer)
 │   │   │   ├── three/        # 3D components (Planet, SolarSystem)
+│   │   │   ├── ar/           # Augmented reality components
 │   │   │   └── ui/           # UI components from shadcn/ui
-│   │   ├── contexts/         # React contexts (SolarSystemContext)
+│   │   ├── contexts/         # React contexts (SolarSystemContext, AuthContext)
 │   │   ├── hooks/            # Custom React hooks
 │   │   ├── lib/              # Utility functions and configurations
 │   │   ├── pages/            # Main page components
+│   │   │   ├── auth/         # Authentication pages
+│   │   │   ├── celestial/    # Celestial object pages
+│   │   │   ├── missions/     # Space mission pages
+│   │   │   ├── worksheets/   # Educational worksheet pages
+│   │   │   └── profile/      # User profile pages
 │   │   ├── styles/           # Custom CSS styles
 │   │   ├── App.tsx           # Main App component
-│   │   └── main.tsx         # Entry point for the React app
+│   │   └── main.tsx          # Entry point for the React app
 ├── server/                   # Backend Express server
 │   ├── index.ts              # Server entry point
 │   ├── routes.ts             # API route definitions
 │   ├── storage.ts            # Database connectivity
-│   └── vite.ts              # Server development configuration
+│   └── vite.ts               # Server development configuration
 ├── shared/                   # Shared code between client and server
 │   └── schema.ts             # Database schema definitions
+├── public/                   # Public assets
+│   ├── worksheets/           # PDF worksheets
+│   ├── images/               # Image assets
+│   │   ├── badges/           # Achievement badge images
+│   │   └── worksheets/       # Worksheet thumbnails
+│   └── ar-models/            # 3D models for AR features
 └── various config files      # Configuration files for the project
 ```
 
@@ -145,19 +213,30 @@ npm run dev
 
 The application will be available at `http://localhost:3000`
 
-### Building for Production
+## 🔍 New Features Added
 
-1. Build the application:
+### Latest Space Missions
 
-```
-npm run build
-```
+The application now includes information about recent space missions:
 
-2. Start the production server:
+1. **Artemis Program** - NASA's mission to return humans to the Moon by 2025
+2. **James Webb Space Telescope** - The largest optical telescope in space, providing unprecedented views of distant galaxies and exoplanets
 
-```
-npm start
-```
+To see these new missions:
+
+1. Start the application using the instructions below
+2. Navigate to the "Space Missions" section from the main navigation
+3. You should see the Artemis Program and James Webb Space Telescope listed among the missions
+4. Click on any mission to view detailed information
+
+## 🚨 Troubleshooting
+
+If you don't see the new missions after starting the application:
+
+1. Make sure you've restarted the server completely after pulling the changes
+2. Clear your browser cache or try in a private/incognito window
+3. Check the server console for any error messages
+4. Ensure all database migrations have been applied (if applicable)
 
 ## 📱 Responsive Design
 
@@ -178,25 +257,49 @@ Students using Solar System Explorer will:
 3. Memorize key facts about each celestial body
 4. Develop an interest in astronomy and space science
 5. Test their knowledge through interactive quizzes
+6. Track their learning progress over time
+7. Discover the history of space exploration
+8. Explore beyond planets to other celestial objects
 
-## 🛠️ Future Enhancements
+## 🛠️ Implemented Enhancements
 
-Planned features for future versions:
+The following features have been added to the original application:
 
-- User accounts to track quiz progress
-- Additional celestial objects (moons, asteroids, comets)
-- Space mission timelines and information
-- Augmented reality features for mobile devices
-- Printable worksheets and activities
+### User Accounts to Track Quiz Progress
 
-## 📚 Educational Standards
+- User registration and login system
+- Personal profiles with achievements
+- Quiz progress tracking across sessions
+- Badges for completing challenges
+- Performance statistics and improvement tracking
 
-This application aligns with elementary and middle school science curriculum standards including:
+### Additional Celestial Objects
 
-- Understanding of Earth's place in the solar system
-- Properties of planets and other celestial objects
-- Basic astronomical concepts
-- Scientific inquiry and discovery
+- Detailed moon information for each planet
+- Asteroid and comet database
+- Interactive object viewing
+- Information about object composition and discovery
+
+### Space Mission Timelines and Information
+
+- Historical space mission database
+- Interactive mission timeline
+- Mission details including objectives and discoveries
+- Filtering by agency, status, and target body
+
+### Augmented Reality Features for Mobile Devices
+
+- View planets in AR using mobile camera
+- Interact with 3D models of celestial objects
+- Observe scale relationships in your own space
+- Educational AR experiences
+
+### Printable Worksheets and Activities
+
+- Age-appropriate educational worksheets
+- Hands-on activities for different learning styles
+- Downloadable PDF resources
+- Supplementary materials for educators
 
 ## 👥 Contributors
 
